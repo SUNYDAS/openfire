@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  p {
+    @apply text-base;
+  }
+}
+
+:root {
+  --primary: #101828;
+  --secondary: #ffba00;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background: #000;
+}
+
+.call{
+    color: #ffba00;
+}
+
+.btn1{
+    background-color: #ffba00;
+    padding: 10px 30px;
+    border-radius: 20px;    
+    font-weight: bold;
+}
+
+.btn1:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.des h3{
+  font-size: 20px;
+}
+
+.data {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.data td{
+  padding: 5px;
+  border: 2px solid #000;
+}
+
+.data th{
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border: 2px solid #000;
+}

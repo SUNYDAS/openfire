@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Data</title>
+    <link href="/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('header') %>
+    <h1 class="text-4xl font-bold p-4 text-center">Form Data</h1>
+
+<section class="max-h-[400px] overflow-y-auto">
+<table border="1" cellpadding="10" cellspacing="0" class="data">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Message</th>
+  </tr>
+
+  <% if (contacts.length === 0) { %>
+    <tr>
+      <td colspan="3" style="text-align:center;">No Data Found</td>
+    </tr>
+  <% } %>
+
+  <% contacts.forEach(contact => { %>
+    <tr>
+      <td><%= contact.name %></td>
+      <td><%= contact.email %></td>
+      <td><%= contact.phone %></td>
+      <td><%= contact.message %></td>
+    </tr>
+  <% }) %>
+</table>
+</section>
+
+</body>
+</html>
