@@ -5,7 +5,7 @@ const connectDB = require("./config/db");
 const Contact = require("./models/contact");
 
 const app = express();
-const port = 3030;
+const port = 3000;
 
 // Connect MongoDB Atlas
 connectDB();
